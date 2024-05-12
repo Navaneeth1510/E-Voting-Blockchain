@@ -1,0 +1,117 @@
+\chapter{Introduction}
+\thispagestyle{special}
+\section{DATABASE TECHNOLOGIES}
+The essential feature of database technology is that it provides an internal representation (model)
+of the external world of interest. Examples are, the representation of a particular
+date/time/flight/aircraft in an airline reservation or of the item code/item description/quantity on
+hand/reorder level/reorder quantity in a stock control system.
+The technology involved is concerned primarily with maintaining the internal representation
+consistent with external reality; this involves the results of extensive R&D over the past 30 years
+in areas such as user requirements analysis, data modelling, process modelling, data integrity,
+concurrency, transactions, file organisation, indexing, rollback and recovery, persistent
+programming, object-orientation, logic programming, deductive database systems, active database
+systems... and in all these (and other) areas there remains much more to be done. The essential
+point is that database technology is a CORE TECHNOLOGY which has links to:
+\begin{itemize}
+\item{Information management / processing
+}
+\item{Data analysis / statistics}
+\item{Data visualization / presentation}
+\item{Multimedia and hypermedia}
+\item{Office and document systems}
+\item{Business processes, workflow, CSCW (computer-supported cooperative work)}
+\end{itemize}
+Relational DBMS is the modern base technology for many business applications. It offers
+flexibility and easy-to-use tools at the expense of ultimate performance. More recently relational
+systems have started extending their facilities in directions like information retrieval, object orientation and deductive/active systems which lead to the so-called 'Extended Relational Systems'. 
+\\
+Information Retrieval Systems began with handling library catalogues and then extended to full
+free-text by utilizing inverted index technology with a lexicon or thesaurus. Modern systems utilize
+some KBS (knowledge-based systems) techniques to improve the retrieval.
+Object-Oriented DBMS started for engineering applications in which objects are complex, have
+versions and need to be treated as a complete entity. OODBMSs share many of the OOPL features
+such as identity, inheritance, late binding, overloading and overriding. OODBMSs have found
+favours in engineering and office systems but haven’t been successful yet in traditional application
+areas.
+Deductive / Active DBMS has evolved over the last 20 years and combines logic programming
+technology with database technology. This allows the database itself to react to the external events
+and also to maintain its integrity dynamically with respect to the real world.
+
+\section{ CHARACTERISTICS OF DATABASE APPROACH}
+Traditional form included organising the data in file format. DBMS was a new concept then, and
+all kinds of research was done to make it overcome the deficiencies in traditional style of data
+management. A modern DBMS has the following characteristics −
+\begin{itemize}
+        \item{Real-world entity − A modern DBMS is more realistic and uses real-world entities to design
+its architecture. It uses behaviour and attribute too. For example, a school database may use
+students as an entity and their age as an attribute.}
+     \item{Relation-based tables − DBMS allows entities and relations to form tables.
+A user can understand the architecture of a database by just looking at the table names.}
+    \item{Isolation of data and application − A database system is entirely different than its data. A
+database is an active entity, whereas data is said to be passive, on which the database works
+and organizes. DBMS also stores metadata, which is data about data, to ease its own
+process.}
+    \item{Less redundancy − DBMS follows the rules of normalization, which splits a relation when
+any of its attributes has redundancy in its values. Normalization is a mathematically rich
+and scientific process that will reduces the data redundancy}
+        \item{Consistency − Consistency is a state where every relation in a database remains consistent.
+There exists methods and techniques, that can detect an attempt of leaving database in an
+inconsistent state. DBMS can provide greater consistency as compared to earlier forms of
+data storing applications like file-processing systems.
+}
+\item{Query Language − DBMS is equipped with query language, which makes it more efficient
+to retrieve and manipulate data. A user can apply as many and the filtering options as
+required to retrieve a set of data. Traditionally it was not possible where file-processing
+system was used}
+\item{ACID Properties − DBMS follows the concepts of Atomicity, Consistency, Isolation, and
+Durability (normally shortened as ACID). These concepts are applied on transactions,
+which manipulate data in a database. ACID properties help the database to stay healthy in
+multi-transactional environments and also in case of failure.}
+\item{Security − Features like multiple views offer security to certain extent when users are
+unable to access the data of other users and departments. DBMS offers methods to impose
+constraints while entering data into the database and retrieving the same at a later stage.
+DBMS offers many different levels of security features, which enables multiple users to
+have different views with different features. For example, a user in the Sales department
+cannot see the data that belongs to the Purchase department. It can also be helpful in
+deciding how much data of the Sales department should be displayed to the user. Since a
+DBMS is not saved on the disk as traditional file systems, it is very hard for miscreants to
+break the code.}
+\item{Multiuser and Concurrent Access − DBMS supports multi-user environment and allows
+them to access and manipulate data in parallel. Though there are restrictions on transactions
+when users attempt to handle the same data item, but users are always unaware of them.
+}
+\end{itemize} 
+\par 
+\par
+\section{APPLICATIONS OF DBMS}
+Applications of Database Management Systems :
+\begin{itemize}
+\item {Telecom: There is a database to keeps track of the information regarding the calls made,
+network usage, customer details etc. Without the database system it is hard to maintain such
+huge amounts of data which gets updated every millisecond.}
+\item{Industry: Whether it is a manufacturing unit, a warehouse or a distribution centre, each one
+needs a database to keep the records of the ins and outs. For example, a distribution centre
+should keep a track of the product units that were supplied to the centre as well as the
+products that got delivered from the distribution centre on each day; this is where DBMS
+comes into picture}
+\item {Banking System: For storing information regarding a customer, keeping a track of his/her
+day to day credit and debit transactions, generating bank statements etc is done with through
+Database management systems.}
+\item {Education sector: Database systems are frequently used in schools and colleges to store and
+retrieve the data regarding the student , staff details, course details, exam details, payroll
+data, attendance details, fees details etc. There is lots of inter-related data that needs to be
+stored and retrieved in an efficient manner.}
+\item{Online shopping: You must be aware of the online shopping websites such as Amazon, Flip
+kart etc. These sites store the product information, your addresses and preferences, credit
+details and provide you the relevant list of products based on your query. All this involves a
+Database management system.}
+\end{itemize}
+\par
+\section{PROBLEM DESCRIPTION/STATEMENT}
+Placement Experience Database System deals with the information of the candidates who have been recruited by the corporate companies.
+It involves following functionalities:
+\begin{itemize}
+    \item It consists of Student,Companies and Info.
+    \item Each student can Login or Sign up according to their requirement
+    \item He/She can view their status in each of the following companies.
+\end{itemize}
