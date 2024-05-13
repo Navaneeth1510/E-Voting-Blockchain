@@ -1,8 +1,8 @@
 {
-    "functions": {
-        "api/**/*.php": { runtime: "vercel-php@0.6.0" },
-    },
-    "routes": [
-        { src: "/api/EVotingMain1.php", dest:"/(.*)" }
-    ],
+  "functions": {
+    "api/*.php": { "runtime": "vercel-php@0.6.0" }
+  },
+  "routes": [
+    { "src": "/(.*)", "dest": "/api/EVotingMain1.php" }
+  ]
 }
