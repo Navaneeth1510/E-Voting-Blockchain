@@ -52,7 +52,8 @@
     { "src": "/backup_blockchain.json", "dest": "/api/backup_blockchain.json" },
     { "src": "/bg.png", "dest": "/api/bg.png" },
     { "src": "/bg2.jpg", "dest": "/api/bg2.jpg" },
-    { "src": "/index.php", "dest": "/api/index.php" },
+    { "src": "/index.php", "dest": "/index.php" },
     { "src": "/trial_blockchain.json", "dest": "/api/trial_blockchain.json" }
   ]
 }
+
