@@ -1,6 +1,7 @@
 {
   "functions": {
-    "api/*.php": { "runtime": "vercel-php@0.6.0" }
+    "api/*.php": { "runtime": "vercel-php@0.6.0" },
+    "api/*.js": { "runtime": "nodejs20.x" }
   },
   "routes": [
     { "src": "/EVotingMain1.php", "dest": "/api/EVotingMain1.php" },
